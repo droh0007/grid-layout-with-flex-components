@@ -4,10 +4,22 @@ body {
   }
   
   .emoji {
+    display: grid;
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
+    gap: 5px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "icon1 icon2"
+    "icon3 icon4"
   }
+
+  .icon:nth-child(1) { grid-area: icon1; }
+  .icon:nth-child(2) { grid-area: icon2; }
+  .icon:nth-child(3) { grid-area: icon3; }
+  .icon:nth-child(4) { grid-area: icon4; }
   
   .emoji h2 {
     margin: 0;
