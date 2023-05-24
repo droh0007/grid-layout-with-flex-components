@@ -8,6 +8,9 @@ body {
     border-radius: 8px;
     padding: 1rem;
     gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .emojis {
@@ -32,34 +35,29 @@ body {
   /*assigns a grid area name for each icon*/
 
   .emoji h2 {
-    display: flex;
     margin: 0;
     border-bottom: 2px solid #ccc;
     margin-top: 0;
     order: 1;
+    text-align: center;
   }
   
   .emoji a {
-    display: flex;
     text-decoration: none;
     background-color: #781BAA;
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    order: 1;
+    order: 3;
   }
   
-  .icon {
+  .emoji span {
+    text-align: center;
+    order: 0;
     font-size: 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    /*justify-content: flex-start;*/
-    align-items: center;
-    order: -1;
   }
 
-  p {
-    display: flex;
+  .emoji p {
     padding-bottom: 20px;
-    order: 1;
+    order: 2;
   }
