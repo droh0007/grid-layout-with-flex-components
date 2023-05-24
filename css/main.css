@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /*adds flex to cards, makes them display in a coloum and adds some styling*/
   }
 
   .emojis {
@@ -26,6 +27,7 @@ body {
     "icon1 icon2"
     "icon3 icon4"
     "icon3 icon4"
+    /*gives display of grid so that grid areas can be assigned, adds in grid template and some style*/
   }
 
   .icon:nth-child(1) { grid-area: icon1; }
@@ -40,6 +42,7 @@ body {
     margin-top: 0;
     order: 1;
     text-align: center;
+    /*gives h2 an order to display in, centers and adds style*/
   }
   
   .emoji a {
@@ -49,15 +52,18 @@ body {
     padding: 1rem;
     border-radius: 8px;
     order: 3;
+    /*gives the button the lowest position and adds premade style*/
   }
   
   .emoji span {
     text-align: center;
     order: 0;
     font-size: 4rem;
+    /*sets size of emoji, centers and gives it the highest postion*/
   }
 
   .emoji p {
     padding-bottom: 20px;
     order: 2;
+    /*gives order to paragraphs and adds spacing to the bottom*/
   }
