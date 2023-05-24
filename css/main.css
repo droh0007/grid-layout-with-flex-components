@@ -24,24 +24,21 @@ body {
     "icon3 icon4"
   }
 
-/*
-  .icon {
-    display: flex;
-    flex-wrap: wrap;
-  }*/
-
   .icon:nth-child(1) { grid-area: icon1; }
   .icon:nth-child(2) { grid-area: icon2; }
   .icon:nth-child(3) { grid-area: icon3; }
   .icon:nth-child(4) { grid-area: icon4; }
   /*assigns a grid area name for each icon*/
-  
+
   .emoji h2 {
+    display: flex;
     margin: 0;
     border-bottom: 2px solid #ccc;
+    margin-top: 0;
   }
   
   .emoji a {
+    display: flex;
     text-decoration: none;
     background-color: #781BAA;
     color: white;
@@ -51,4 +48,14 @@ body {
   
   .icon {
     font-size: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: flex-start;*/
+    align-items: center;
+    order: -1;
+  }
+
+  p {
+    display: flex;
+    padding-bottom: 20px;
   }
